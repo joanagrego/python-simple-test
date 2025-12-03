@@ -10,7 +10,7 @@ app = Flask(__name__)
 JWT_SECRET = 'secret123'
 
 # VULNERABILITY: Debug mode enabled
-app.debug = True
+app.config['DEBUG'] = True
 
 # In-memory database
 items = [
